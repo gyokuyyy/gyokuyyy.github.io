@@ -1,0 +1,398 @@
+# Linux介绍、命令
+
+## 01.操作系统
+
+操作系统：主要作用的管理好硬件设备，并为用户和应用程序提供一个简单的接口，以便于使用，作为中间人，连接软件和硬件管理好硬件设备
+
+![1650875443020](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650875443020.png)
+
+### 1.1操作系统的作用
+
+- 是现代计算机系统中最基本和最重要的系统软件
+- 是配置在计算机硬件上的第一层软件，是对硬件系统的首次扩展
+- 主要作用是管理好硬件设备，并为用户和应用程序提供一个简单的接口，以便于使用
+- 而其他的诸如编译程序、数据库管理系统，以及大量的应用软件，都直接依赖于操作系统的支持
+
+
+
+### 1.2不同应用领域的主流操作系统
+
+- 桌面操作系统
+  - Windows系列
+    - 用户群体大
+  - macOS
+    - 适合于开发人员
+  - Linux
+    - 应用软件少
+- 服务器操作系统
+  - Windows Server
+    - 付费
+    - 占有率低
+  - Linux
+    - 安全、稳定、免费
+    - 占有率高
+- 嵌入式操作系统
+  - Linux
+- 移动设备操作系统
+  - iOS
+  - Android（基于Linux）
+
+
+
+### 1.3虚拟机
+
+![1650876511444](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650876511444.png)
+
+## 02.操作系统发展史
+
+### 01.操作系统发展史
+
+#### 1.1Unix
+
+![1650876550408](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650876550408.png)
+
+![1650876607902](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650876607902.png)
+
+
+
+#### 1.2Minix
+
+![1650876702507](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650876702507.png)
+
+
+
+#### 1.3Linux
+
+![1650876744474](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650876744474.png)
+
+### 02.Linux内核及发行版
+
+#### 2.1Linux内核版本
+
+![1650877122433](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877122433.png)
+
+#### 2.2Linux发行版本
+
+![1650877138533](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877138533.png)
+
+### 03Linux应用领域
+
+#### 3.1服务器领域
+
+![1650877215056](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877215056.png)
+
+#### 3.2嵌入式领域
+
+![1650877240337](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877240337.png)
+
+#### 3.3个人桌面领域
+
+![1650877266250](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877266250.png)
+
+## 03.Centos图形界面
+
+### 01.centos的桌面
+
+![1650877446195](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877446195.png)
+
+### 02.窗口操作按钮
+
+
+
+## 04.文件和目录
+
+### 01.Windows和Linux文件系统区别
+
+#### 1.1Windows下的文件系统
+
+![1650877588480](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877588480.png)
+
+#### 1.2Linux下的文件系统
+
+![1650877648588](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877648588.png)
+
+![1650877669384](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877669384.png)
+
+#### 1.3用户目录
+
+位于 /home/user ,称之为用户工作目录或家目录，表示方式
+
+```shell
+/home/user
+~
+```
+
+#### 1.4Linux主要目录速查表
+
+![1650877839850](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877839850.png)
+
+![1650877896105](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650877896105.png)
+
+![1650878007946](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650878007946.png)
+
+
+
+## 05.常用Linux命令的基本使用
+
+### 01.常用Linux命令的基本使用
+
+![1650878171586](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650878171586.png)
+
+cd:
+
+../：上一级目录
+
+～：/home/admin
+
+—：切换到上一次的目录
+
+ls:
+
+-a：所有东西都显示
+
+-l：详细信息都显示
+
+-lh：将文件大小换成人性化显示
+
+touch 创建空文件
+
+touch abc.txt 	在当前目录下创建，如果指定了目录，必须保证上级目录存在
+
+touch .abc	创建隐藏文件
+
+gedit abc.txt 	使用记事本打开文件
+
+rm 删除文件
+
+rm a.txt	删除文件
+
+rm abc -r	删除文件夹
+
+rm * -r 不能删除隐藏文件
+
+### 02.自动补全
+
+![1650887074676](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650887074676.png)
+
+## 06.Linux终端命令的基本使用
+
+### 01.终端命令格式
+
+```shell
+command [-options] [parameter]
+```
+
+![1650887380548](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650887380548.png)
+
+--help：帮助文档
+
+man command
+
+![1650887516413](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650887516413.png)
+
+
+
+## 07.Linux基本命令（一）
+
+### 1.ls
+
+![1650969359512](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650969359512.png)
+
+drwxrwxr-x	d 代表文件夹	- 代表文件
+
+rwx rwx r-x	r 可读	w 可写	x执行
+
+第一组指文件的拥有者的权限，第二组代表文件拥有的组的权限，第三组代表其他用户的权限
+
+ls	查看其它目录的内用
+
+ls	-la /home
+
+ls	*txt	查看当前目录下的所有以txt结尾的文件
+
+![1650970261190](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650970261190.png)
+
+![1650970274929](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650970274929.png)
+
+### 2.拷贝 cp
+
+![1650970845239](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650970845239.png)
+
+### 3.移动、重命名 mv
+
+![1650971278090](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650971278090.png)
+
+
+
+## 08.Linux基本命令（二）
+
+### 1.输出重定向命令：>
+
+ls	> 1.txt	把命令返回的结果输出到文件中，会覆盖之前的数据，默认情况命令返回的结果是显示在屏幕中
+
+ls	>> 1.txt	把命令返回的结果输出到文件中，追加的方式
+
+![1650971590031](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1650971590031.png)
+
+### 2.分屏显示 more
+
+查看内容时，在信息过长无法在一屏上显示时，会出现快速滚屏，使得用户无法看清文件的内容，此时可以使用more命令，每次只显示一页，按下空格键可以显示下一页，按下q键退出显示，按下h键可以获取帮助
+
+```shell
+more test.txt
+```
+
+### 3.管道：
+
+管道：一个命令的输出可以通过管道作为另一个命令的输入。
+
+```shell
+ls / | more
+```
+
+ls -l / | more	把左边的命令返回的结果交给右边命令进行处理
+
+### 4.建立链接文件：ln
+
+Linux链接文件类似于Windows下的快捷方式
+
+链接文件分为软链接和硬链接
+
+软链接：不占用磁盘空间，源文件删除则软连接失效
+
+硬链接：只能链接普通文件，不能链接目录
+
+使用格式：
+
+![1651144994723](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651144994723.png)
+
+如果没有-s选项代表建立了一个硬链接文件，两个文件占用相同大小的硬盘空间，即使删除了源文件，链接文件还是存在，所以-s选项更是常见的形式。
+
+注意：如果软链接文件和源文件不在同一目录，源文件要使用绝对路径，不能使用相对路径。
+
+### 5.查看或合并文件内容：cat
+
+```shell
+cat test1.txt test2.txt
+```
+
+cat	1.txt	把文件的内容全部显示到屏幕中
+
+cat	1.txt	2.txt
+
+cat	1.txt	2.txt	> 3.txt	把多个文件的内容合并到新的文件中
+
+### 6.文本搜索：grep
+
+Linux系统中grep命令是一种强大的文本搜索工具，grep允许对文本文件进行模式查找。如果找到匹配模式，grep打印包含模式的所有行。
+
+![1651146371527](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651146371527.png)
+
+grep搜索串可以是正则表达式
+
+![1651146795354](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651146795354.png)
+
+### 7.查找文件：find
+
+通常用来在特定的目录下搜索符合条件的文件，也可以用来搜索特定用户属主的文件。
+
+find /home -name 1.txt	:在/home目录下查找文件名为1.txt的文件
+
+![1651147202934](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651147202934.png)
+
+### 8.归档管理：tar
+
+计算机中的数据经常需要备份，tar是unix/Linux中最常使用的备份工具，此命令可以把一系列文件归档到一个大文件中，也可以把档案文件解开以恢复数据。
+
+![1651228988681](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651228988681.png)
+
+f必须放在最后，f后面的第一个参数代表要生成的文件名，锁门多有的参数是要打包的文件。
+
+-C解包到指定的文件夹，文件夹需要提前创建好
+
+![1651229201243](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651229201243.png)
+
+### 9.文件压缩解压：gzip
+
+压缩：1.打包	2.压缩
+
+解压：1.解压	2.解包
+
+tar与gzip命令结合使用实现文件打包、压缩。tar只负责打包，但不压缩，用gzip压缩tar打包后的文件，其扩展名一般用xxxx.tar.gz。
+
+![1651229689136](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651229689136.png)
+
+![1651230005385](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651230005385.png)
+
+![1651230200595](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651230200595.png)
+
+### 10.文件压缩解压：bzip2
+
+![1651230379871](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651230379871.png)
+
+### 11.文件压缩解压：zip、unzip
+
+![1651230539457](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651230539457.png)
+
+压缩率：zip < gzip < bzip2
+
+通用性：zip > gzip > bzip2
+
+### 12.查看命令位置：which
+
+
+
+### 13.修改文件权限：chmod
+
+chmod修改文件权限有两种使用格式：字母法与数字法
+
+![1651230986368](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651230986368.png)
+
+![1651486683698](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651486683698.png)
+
+![1651487614349](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651487614349.png)
+
+
+
+### 14.切换到管理员账号
+
+Centos 下切换到root的简单命令：su
+
+### 15.设置用户密码：passwd
+
+在Unix、Linux中，超级用户可以使用passwd命令为普通用户设置或修改用户密码。用户也可以直接使用该命令来修改自己的密码，而无需在命令后面使用用户名。
+
+### 16.退出登录账号：exit
+
+- 如果是图形界面，退出当前终端
+- 如果是使用ssh远程登陆，退出登录账号
+- 如果是切换后的登陆用户，退出则返回上一个登陆账号
+
+### 17.查看登录用户：who
+
+查看当前登录的用户
+
+pts：代表一个终端
+
+tty：代表用户登录了操作系统
+
+pkill -kill -t tty1
+
+![1651232157899](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651232157899.png)
+
+### 18.关机重启：reboot、shutdown
+
+reboot 	不需要权限
+
+shutdown	需要root权限
+
+![1651232183030](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651232183030.png)
+
+
+
+## 09.编辑器vim
+
+![1651488412643](C:\Users\wangyu\AppData\Roaming\Typora\typora-user-images\1651488412643.png)
+
+ 
+
